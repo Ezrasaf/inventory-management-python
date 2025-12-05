@@ -78,91 +78,101 @@ mostrar_ultimos/        # reportes de últimas compras, ventas, clientes
 Pruebas_unitarias/      # tests automatizados
 trabajo.py              # menú principal y orquestación
 
-Características técnicas:
+### 🔧 Características Técnicas
 
-Uso intensivo de listas y diccionarios para manejar:
+- Manipulación de datos mediante **listas**, **diccionarios** y estructuras propias.
+- Persistencia de información en archivos:
+  - `.txt` para registros planos
+  - `.json` para estructuras complejas
+- Menú interactivo con opciones numeradas.
+- Código extensible: se pueden agregar nuevas opciones sin romper la lógica actual.
+- Separación clara entre:
+  - **lógica de negocio**
+  - **manejo de archivos**
+  - **operaciones CRUD**
 
-productos
+---
 
-clientes
+## 🧪 Pruebas Unitarias
 
-compras
-
-ventas
-
-Manejo de archivos (.txt, .json) para persistencia de datos.
-
-Menú principal estructurado por secciones:
-
-[1] Productos
-
-[2] Clientes
-
-[3] Compras
-
-[4] Ventas
-
-[0] Salir
-
-Código pensado para ser extensible: se pueden agregar nuevas opciones al menú sin romper el flujo existente.
-
-🧪 Pruebas
-
-El proyecto incluye una carpeta de pruebas unitarias:
+El proyecto incluye un módulo de testing con **pytest**, ubicado en:
 
 Pruebas_unitarias/
-  Funciones.py
-  test_Funciones.py
+Funciones.py
+test_Funciones.py
 
+go
+Copiar código
 
-Las pruebas se ejecutan con pytest:
+Para ejecutar los tests:
 
+```bash
 pytest Pruebas_unitarias/
+▶️ Cómo Ejecutar el Sistema
+Cloná el repositorio:
 
-▶️ Cómo ejecutar el sistema
-
-Clonar el repositorio:
-
+bash
+Copiar código
 git clone https://github.com/Ezrasaf/inventory-management-python.git
 cd inventory-management-python
+(Opcional) Crear un entorno virtual:
 
-
-(Opcional) Crear entorno virtual e instalar dependencias:
-
+bash
+Copiar código
 python -m venv venv
-venv\Scripts\activate          # Windows
-# source venv/bin/activate     # Linux / Mac
+venv\Scripts\activate      # Windows
+# source venv/bin/activate # Linux / Mac
+Ejecutar el sistema:
 
-pip install -r requirements.txt    # si se define
-
-
-Ejecutar el menú principal:
-
+bash
+Copiar código
 python trabajo.py
+🛠 Tecnologías Utilizadas
+Python 3.x
 
+Persistencia en JSON y TXT
 
-(ajustar la ruta si se mueve a src/)
+pytest para testing
 
-🧑‍💻 Stack tecnológico
+Git + GitHub para control de versiones
 
-Lenguaje: Python 3.x
+Documentación y gestión del proyecto con Trello
 
-Paradigma: Programación estructurada y modular
+📚 Documentación del Proyecto
+Este proyecto se realizó siguiendo etapas, sprints, roles y flujos definidos, documentados en:
 
-Persistencia: Archivos de texto y JSON
+Informe del Proyecto (PDF)
 
-Testing: pytest
+Diagrama del sistema y sus módulos
 
-Control de versiones: Git + GitHub
-
-Gestión del proyecto: Trello (sprints, backlog)
+(Se recomienda agregar los documentos dentro de una carpeta /docs del repositorio.)
 
 👤 Autor
+Ezrasaf
+Estudiante de Ingeniería en Informática – UADE
+Interesado en Backend, Python, SQL e Ingeniería de Datos.
 
-Ezrasaf – Estudiante de Ingeniería en Informática (UADE)
-Interesado en Backend, Python, Datos y Automatización.
+⭐ Valor del Proyecto en Portfolio
+Este proyecto demuestra:
 
+Capacidad para diseñar un sistema real desde cero
 
-4. Abajo → **Commit new file**
+Trabajo modular en Python
 
-Listo: tu proyecto Python ahora se ve como un **mini ERP de inventario profesional** en tu GitHub.
+CRUD completo
+
+Persistencia en archivos
+
+Testing automatizado
+
+Documentación y seguimiento con metodología ágil
+
+Es ideal para postular a posiciones de:
+
+Backend Jr
+
+Python Developer Jr
+
+IT / Soporte Técnico con programación
+
+Data Engineering (nivel inicial con Python + SQL)
